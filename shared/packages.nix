@@ -23,7 +23,7 @@ with pkgs; [
   zip
 
   # Encryption and security tools
-  _1password
+  # _1password
   age
   age-plugin-yubikey
   gnupg

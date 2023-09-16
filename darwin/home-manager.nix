@@ -1,7 +1,7 @@
 { config, pkgs, lib, home-manager, ... }:
 
 let
-  user = "dustin";
+  user = "david";
   # Define the content of your file as a derivation
   myEmacsLauncher = pkgs.writeScript "emacs-launcher.command" ''
     #!/bin/sh
@@ -36,7 +36,7 @@ in
   # $ mas search <app name>
   #
   homebrew.masApps = {
-    "1password" = 1333542190;
+    # "1password" = 1333542190;
     "canva" = 897446215;
     "drafts" = 1435957248;
     "hidden-bar" = 1452453066;
@@ -109,7 +109,7 @@ in
     { path = "/Applications/Slack.app/"; }
     { path = "/System/Applications/Messages.app/"; }
     { path = "/System/Applications/Facetime.app/"; }
-    { path = "/Applications/Telegram.app/"; }
+    # { path = "/Applications/Telegram.app/"; }
     { path = "${pkgs.alacritty}/Applications/Alacritty.app/"; }
     { path = "/System/Applications/Music.app/"; }
     { path = "/System/Applications/News.app/"; }
